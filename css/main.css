@@ -1,0 +1,340 @@
+/*
+ * Copyright (c) 2012-2013 Thibaut Courouble
+ * http://www.cssflow.com
+ * Licensed under the MIT License
+ *
+ * Sass/SCSS source: https://goo.gl/UhXKg
+ * PSD by Vin Thomas: https://goo.gl/n1M2e
+*/
+.developments, .contact-me {
+    font-family: 'Poiret One', monospace;
+}
+
+.contact-me h2 {
+    font-size: 44px;
+}
+
+.navbar a{
+    color:black;
+}
+
+body {
+    height: 100%;
+}
+
+.jumbotron-fluid {
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-bottom: 0px;
+}
+
+.jumbotron-fluid h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Bungee', sans-serif;
+    margin-top: 20%;
+}
+
+.buttons a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fa {
+    padding: 20px;
+    width: 80px;
+    font-size: 48px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.jumbotron .container {
+    margin: auto;
+    align-content: center;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+.navbar a {
+    color: black;
+    font-size: 24px;
+    padding: 0 48px 0 48px;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.col-lg-12 p {
+    font-size: 24px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+    font-family: 'Poiret One', monospace;
+    margin: 0px;
+}
+
+.closing-quote {
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+hr {
+    margin: 40px;
+    background: black;
+}
+
+.col-lg-6 {
+    padding: 40px;
+}
+
+.col-lg-6 img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.col-lg-6 p {
+    font-size: 24px;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    font-family: 'Poiret One', monospace;
+}
+
+.container-fluid .progress {
+    padding: 30px;
+    height: 30px;
+    background: white;
+}
+
+.progress-bar {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.container .progress {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.progress {
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 16px;
+  border-radius: 4px;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+
+/*
+    Code for the progress bar
+ */
+
+.container .progress {
+  width: 500px;
+    margin: 0px;
+}
+
+.progress {
+  padding: 4px;
+    display: block;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 16px;
+    width: 20px;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/*
+ * Note: using adjacent or general sibling selectors combined with
+ *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
+ *       See this article for more info and a potential fix:
+ *       https://css-tricks.com/webkit-sibling-bug/
+ */
+
+#five:checked ~ .progress > .progress-bar {
+  width: 55%;
+  background-color: #f27011 ;
+}
+
+#twentyfive:checked ~ .progress > .progress-bar {
+  width: 45%;
+  background-color: #f63a0f;
+}
+
+#fifty:checked ~ .progress > .progress-bar {
+  width: 70%;
+  background-color: #f2b01e;
+}
+
+#seventyfive:checked ~ .progress > .progress-bar {
+  width: 96%;
+  background-color: #86e01e;
+}
+
+#onehundred:checked ~ .progress > .progress-bar {
+  width: 88%;
+  background-color:  #f2d31b;
+}
+
+.radio {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  margin: 0 5px 20px;
+  padding: 3px 20px;
+  color: dimgray;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.radio:checked + .label {
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 768px) {
+    .container .progress {
+        width: 300px;
+    }
+}
+
+/*
+    End of progress bar
+*/
+
+.skills {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.developments {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+img {
+    margin: auto;
+    align-items: center;
+}
+.card-img-top {
+    width: 128px;
+    height: 128px;
+}
+
+.col-lg-3, .col-md-6 {
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    height: 370px; 
+}
+
+.card-body {
+    padding: 12px;
+}
+
+.contact-me h1,h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+form .form-group {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.form-group label {
+    margin-top: 40px
+}
+
+form .btn {
+    display: block;
+    width: 200px;
+    margin-top:20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form .btn:hover {
+    border: 2px solid blue;
+    background: white;
+    color: black;
+    font-style: bold;
+}
+
+.container-fluid {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: black;
+}
+
+.container-fluid h2 {
+    color: white;
+    font-size: 38px;
+    font-family: sans-serif
+}
+
+span {
+    font-family: 'Pacifico', sans-serif;
+}
+
