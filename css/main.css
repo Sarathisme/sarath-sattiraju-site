@@ -282,7 +282,7 @@ img {
     margin-top: 15px;
 }
 
-.card {
+.col-lg-3 .card {
     height: 370px; 
 }
 
@@ -338,3 +338,28 @@ span {
     font-family: 'Pacifico', sans-serif;
 }
 
+
+.rectangle {
+    display: block;
+    margin: 0 auto;
+}
+
+.col-sm-6 .card{
+    height: 180px;
+    padding: 20px;
+    margin: 20px;
+    background-color: gray;
+}
+
+.col-sm-6 .card h4,h5,h6{
+    margin:0px;
+    padding: 8px 5px 8px 5px;
+    color:black;
+    font-family: 'Bungee', monospace;
+}
+
+h3 {
+    margin-top: 60px;
+    color: black;
+    font-family: 'Bungee', monospace;
+}
