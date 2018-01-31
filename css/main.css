@@ -307,7 +307,7 @@ img {
 .contact-me h1,h2 {
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 form .form-group {
@@ -330,7 +330,7 @@ form .btn {
 }
 
 form .btn:hover {
-    border: 2px solid blue;
+    border: 2px solid #2979FF;
     background: white;
     color: black;
     font-style: bold;
