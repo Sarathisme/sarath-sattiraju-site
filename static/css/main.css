@@ -23,7 +23,7 @@ body {
 }
 
 .jumbotron-fluid {
-    background-image: url(banner.jpg);
+    background-image: url('../assets/banner.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

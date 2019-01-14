@@ -2,7 +2,7 @@ function sendmail() {
 var email = document.getElementsByClassName("emailId");
 var message = document.getElementsByClassName("message");
 var request = new XMLHttpRequest();
-var url = "../sarath-sattiraju/php/sendMail.php";
+var url = "";
     
 request.open("POST",url,true);
 request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");

@@ -1,0 +1,30 @@
+<div class="contact-me">
+    <h1>Email me at</h1>
+    <h2>sarath.sattiraju@gmail.com</h2>
+</div>
+
+<div class="container">  
+<form action='{{ url_for("send_data") }}' method='POST'>
+    <div class="form-group">
+        <label class="sr-only" for="inlineFormInputGroup">Email</label>
+            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                <div class="input-group-addon">@</div>
+                <input type="email" class="form-control emailId" id="inlineFormInputGroup" name="email" placeholder="Email address" required>
+            </div>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    
+    <div class="form-group">
+        <div class="form-group passwordField" style="margin: 18px auto 0 auto";>
+        <label class="sr-only" for="inlineFormInputGroup">Message</label>
+            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                <textarea class="form-control message" id="exampleTextarea" rows="5" id="inlineFormInputGroup" name="message" placeholder="Message" required></textarea>
+            </div>
+            <small id="emailHelp" class="form-text text-muted">Please type in your message!</small>
+    </div>
+    <div>
+        <input type='submit' class='btn btn-primary' value='Send Message!'>
+    </div>
+    </div>
+</form>
+</div>
